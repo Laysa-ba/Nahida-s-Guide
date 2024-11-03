@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sussurros de Sumeru</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-<nav>
-    <h1>Física da Pureza</h1>
-    <a href="#">História</a>
-    <a href="#">Habilidades</a>
-    <a href="#">Materiais</a>
-    <a href="#">Builds</a>
-    <a href="#">Armas</a> 
-    <a href="#">Times</a>
-</nav>
+        <nav>
+            <h1>Pureza Restauradora - Nahida</h1>
+            <a href="#historia">História</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#materiais">Materiais</a>
+            <a href="#builds">Builds</a>
+            <a href="#armas">Armas</a>
+            <a href="#times">Times</a>
+        </nav>
     </header>
     <main>
-        
-    <div id="visao-geral">
-        <h1>Visão geral</h1>
-        <div id="img">
-            <p>Nahida é uma personagem Dendro jogável em Genshin Impact. Ela é o corpo mortal da Lorde Menor Kusanali, atual Arconte Dendro.
-                Como Lorde Menor Kusanali, ela se esforça para ter uma presença mais forte em Sumeru agora que foi libertada de seu extenso confinamento no Santuário de Surasthana.</p>
+        <section id="visao-geral">
+            <h1>Visão geral</h1>
+            <div id="img">
+                <p>Nahida é uma personagem Dendro jogável em Genshin Impact. Ela é o corpo mortal da Lorde Menor
+                    Kusanali, atual Arconte Dendro.
+                    Como Lorde Menor Kusanali, ela se esforça para ter uma presença mais forte em Sumeru agora que foi
+                    libertada de seu extenso confinamento no Santuário de Surasthana.
+                    Sempre adquirindo novos conhecimentos, ela sempre se esforçou para se tornar uma Arconte digna que
+                    pudesse guiar o seu povo o mais rápido possível.</p>
                 <img src="imagens/Personagem_Nahida_Retrato.webp" alt="Imagem da Nahida">
-        </div>
-        </div>    
+            </div>
+    </section>
     </main>
     <footer>
 
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

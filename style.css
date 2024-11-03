@@ -43,6 +43,12 @@ nav > a{
     text-decoration: none;
     display: flex;
     margin-left: auto;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
 }
 
 nav a + a {
@@ -57,33 +63,62 @@ main{
     width: 100%;
 }
 
-div#visao-geral{
+section#visao-geral{
     text-align: left;
     background-color: var(--cor0);
-    height: 700px;
-    border-radius: 5px;
-    margin: 20px;
-    
+    height: 650px;
+    border-radius: 10px;
+    margin: 50px;
 }
 
-div#visao-geral > h1 {
-    font-size: 4em;
+section#visao-geral > h1 {
+    font-size: 3em;
     padding: 30px;
-
+    color: var(--cor5);
 }
 
 div#img {
     display: flex;
     align-items: center;
+    position: relative;
+    top: -20px; /* Move a div para cima */
+    height: 430px;
 }
 
 div#img > img {
     width: 500px;
     height: 650px;
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
-div#visao-geral > p {
-    text-align: left;
+div#img > p {
     width: 70%;
+    font-size: 35px;
+    color: var(--cor5);
+    padding-left: 50px;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+div#img > p::before{
+    color: var(--cor4);
+    font-size: 120px;
+    content: "“";
+    font-style: normal;
+    height: 40px;
+    line-height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+div#img > p::after{
+    color: var(--cor4);
+    font-size: 120px;
+    content: "”";
+    font-style: normal;
+    height: 40px;
+    line-height: 120px;
+    overflow: hidden;
+    position: absolute;
+    padding-top: 20px;
 }
