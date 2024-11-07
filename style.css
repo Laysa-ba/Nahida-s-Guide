@@ -71,7 +71,7 @@ section#visao-geral{
     margin: 50px;
 }
 
-section#visao-geral > h1 {
+h1 {
     font-size: 3em;
     padding: 30px;
     color: var(--cor5);
